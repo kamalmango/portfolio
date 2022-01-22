@@ -53,8 +53,12 @@ a:hover {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
+/* video {
+  width: 60%;
+} */
+
+video {
+  width: 30%;
 }
 
 
@@ -225,7 +229,8 @@ nav [class*="fa-"]:hover {
   font-size: 1rem;
 }
 
-#projects img {
+#projects video {
+  /* margin: 2rem 0 4rem 0; */
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   border-left: 1px solid var(--aqua);
@@ -252,7 +257,7 @@ footer ul {
   font-size: 3rem;
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   article {
       display: grid;
       grid-template-columns: repeat(10, 1fr);
@@ -261,7 +266,7 @@ footer ul {
       max-width: 1200px;
       margin: 0 auto;
   }
-  #projects img {
+  #projects video {
       grid-column: 1/6;
       grid-row: 1/2;
   }
@@ -279,9 +284,39 @@ footer ul {
       order: 2;
       text-align: left;
   }
-  #projects .reverse img {
+  #projects .reverse video {
       grid-column: 6/11;
       grid-row: 1/2;
+  }
+  #projects .reverse ul {
+      justify-content: flex-start;
+  }
+} */
+
+
+@media (min-width: 800px) {
+  article {
+      display: flex;
+      gap: 10rem;
+  }
+  #projects {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+  #projects video {
+  }
+  .text {
+      order: 2;
+      text-align: right; 
+  }
+  #projects ul {
+      justify-content: flex-end;
+  }
+  #projects .reverse .text {
+      order: -1;
+      text-align: left;
+  }
+  #projects .reverse video {
   }
   #projects .reverse ul {
       justify-content: flex-start;
