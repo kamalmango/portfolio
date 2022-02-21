@@ -53,8 +53,12 @@ a:hover {
   text-decoration: none;
 }
 
-video {
+.mobile-vid {
   width: 30%;
+}
+
+.desktop-vid {
+  width: 100%;
 }
 
 
@@ -226,7 +230,6 @@ nav [class*="fa-"]:hover {
 }
 
 #projects video {
-  /* margin: 2rem 0 4rem 0; */
   margin: 2rem 0 4rem 0;
   padding: 1rem;
   border-left: 1px solid var(--aqua);
@@ -254,15 +257,13 @@ footer ul {
 }
 
 @media (min-width: 800px) {
-  article {
+  .mobile {
       display: flex;
       gap: 10rem;
   }
   #projects {
       max-width: 1200px;
       margin: 0 auto;
-  }
-  #projects video {
   }
   .text {
       order: 2;
@@ -275,10 +276,23 @@ footer ul {
       order: -1;
       text-align: left;
   }
-  #projects .reverse video {
-  }
   #projects .reverse ul {
       justify-content: flex-start;
+  }
+
+  .desktop {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .desktop-text {
+    grid-column: 7/11;
+    grid-row: 1/2;
+    order: 2;
+    text-align: right;
+  }
+  .desktop-vid {
+    grid-column: 1/6;
+    grid-row: 1/2;
   }
 }
 

@@ -14,7 +14,7 @@
 <body>
   <!-- nav -->
   <nav>
-    <ul class="menu desktop">
+    <ul class="menu">
       <li>
         <h1>
           <a href="home.html">
@@ -55,9 +55,36 @@
   <div class="section-blue">
     <section id="projects">
       <h2>Recent Projects</h2>
-      <article>
-        <div class="text">
+
+      <article class="desktop">
+        <div class="desktop-text">
           <h4>Latest Project</h4>
+          <h3>Crypto Punks</h3>
+          <p class="blackbox">
+            Modern Cryptopunk clone build with React.js & Web 3.0, the app uses <a href="https://metamask.io/" target="_blank">Metamask</a> and 
+            <a href="https://thirdweb.com/" target="_blank">Thirdweb</a> to build the backend needed for an Ethereum app. 
+            Generated NFTs are then retreived through the <a href="https://docs.opensea.io/reference/api-overview" target="_blank">OpenSea API.</a> 
+          </p>
+          <div class="git-link">
+            <a href="https://github.com/kamalmango/react-nft" target="_blank">
+              <span class="fab fa-github" aria-hidden="true"></span>
+              <span>https://github.com/kamalmango/react-nft</span>
+            </a>
+          </div>
+          <h4>Technologies used include:</h4>
+          <ul>
+            <li>React</li>
+            <li>Thirdweb</li>
+            <li>OpenSea</li>
+            <li>MetaMask</li>
+          </ul>
+        </div>
+        <video autoplay muted loop class="desktop-vid"><source src="./vids/cryptoPunks.mov"></video>
+      </article>
+
+      <article class="mobile reverse">
+        <div class="text">
+          <h4>Project</h4>
           <h3>Crypto Price Tracker</h3>
           <p class="blackbox">
             Crypto price tracker inspired by <a href="https://www.coinbase.com/price" target="_blank">Coinbase's</a> price list screen. 
@@ -76,9 +103,10 @@
             <li>Expo</li>
           </ul>
         </div>
-        <video autoplay muted loop><source src="./vids/cryptoPriceTracker.mov"></video>
+        <video autoplay muted loop class="mobile-vid"><source src="./vids/cryptoPriceTracker.mov"></video>
       </article>
-      <article class="reverse">
+
+      <article class="mobile">
         <div class="text">
           <h4>Project</h4>
           <h3>Focus Time</h3>
@@ -100,9 +128,10 @@
             <li>Expo</li>
           </ul>
         </div>
-        <video autoplay muted loop><source src="./vids/focusTime.mov"></video>
+        <video autoplay muted loop class="mobile-vid"><source src="./vids/focusTime.mov"></video>
       </article>
-      <article>
+
+      <article class="mobile reverse">
         <div class="text">
           <h4>Project</h4>
           <h3>Tesla UI Clone</h3>
@@ -123,8 +152,9 @@
             <li>Expo</li>
           </ul>
         </div>
-        <video autoplay muted loop><source src="./vids/tesla-demo.mov"></video>
+        <video autoplay muted loop class="mobile-vid"><source src="./vids/tesla-demo.mov"></video>
       </article>
+
     </section>
   </div>
 
