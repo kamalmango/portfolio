@@ -364,3 +364,17 @@ footer ul {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+
+.vercel-link {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.vercel {
+  height: 20px;
+  width: 20px;
+}
